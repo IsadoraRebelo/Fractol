@@ -32,12 +32,12 @@ make fclean
 > P = Psychedelic.<br>
 > B = Brazil.
 
-<b>Ps:</b> The interaction value change when you zoon in and out. <br>
-<b>Ps2:</b> The zoom follows the mouse position.
-
 <b> Controls Julia Set: </b>
 > Move the mouse to change form. <br>
 > Click to freeze, click again to unfreeze. 
+
+<b>Ps:</b> The interaction value change when you zoon in and out. <br>
+<b>Ps2:</b> The zoom follows the mouse position.
 
 ## <b> Images: </b><br>
 ###### <b> Mandelbrot Set: </b><br>
