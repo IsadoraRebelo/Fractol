@@ -6,7 +6,7 @@
 #    By: ihering- <ihering-@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2019/06/27 15:24:14 by ihering-       #+#    #+#                 #
-#    Updated: 2019/07/29 13:19:59 by ihering-      ########   odam.nl          #
+#    Updated: 2019/10/30 14:25:42 by ihering-      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,9 +15,9 @@ S = ./
 H = ./
 SRC = main.c mandelbrot.c julia.c menu.c mouse.c color.c keys.c burningship.c
 OBJ = $(SRC:%.c=%.o)
-HDR = fdf.h libft/includes/libft.h
+HDR = fdf.h libft/include/libft.h
 MINILIBX = -I minilibx -L minilibx -lmlx -framework OpenGL -framework Appkit
-LIB = -I libft/includes -L libft -lft
+LIB = -I libft/include -L libft -lft
 FLAGS = -Wall -Werror -Wextra
 
 DARKOLIVEGREEN3= \033[0;38;5;149m

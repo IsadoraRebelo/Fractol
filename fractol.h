@@ -6,7 +6,7 @@
 /*   By: ihering- <ihering-@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/07/01 10:57:22 by ihering-       #+#    #+#                */
-/*   Updated: 2019/08/01 15:03:59 by ihering-      ########   odam.nl         */
+/*   Updated: 2019/10/30 14:25:50 by ihering-      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 # define FRACTOL_H
 
 # include "keys.h"
-# include "libft/includes/libft.h"
+# include "libft/include/libft.h"
 # include <fcntl.h>
 # include <math.h>
 # include "./minilibx/mlx.h"

@@ -3,10 +3,10 @@
 /*                                                        ::::::::            */
 /*   libft.h                                            :+:    :+:            */
 /*                                                     +:+                    */
-/*   By: ihering- <marvin@codam.nl>                   +#+                     */
+/*   By: ihering- <ihering-@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2019/01/19 16:58:24 by ihering-       #+#    #+#                */
-/*   Updated: 2019/07/03 11:18:04 by ihering-      ########   odam.nl         */
+/*   Created: 2019/10/30 14:27:41 by ihering-       #+#    #+#                */
+/*   Updated: 2019/10/30 14:27:45 by ihering-      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 # include <unistd.h>
 # include <string.h>
 
-# define BUFF_SIZE 42
+# define BUFF_SIZE 547
 # define ENDL '\n'
 
 typedef struct	s_list
@@ -27,9 +27,7 @@ typedef struct	s_list
 	struct s_list	*next;
 }				t_list;
 
-/*
-** -------------------------------- Memory ------------------------------------
-*/
+/* Memory */
 void			*ft_memset(void *b, int c, size_t len);
 void			*ft_memcpy(void *dst, const void *src, size_t n);
 void			*ft_memccpy(void *dst, const void *src, int c, size_t n);
@@ -40,9 +38,7 @@ void			ft_memdel(void **ap);
 char			*ft_memdup(void const *content, size_t content_size);
 int				ft_memcmp(const void *s1, const void *s2, size_t n);
 
-/*
-** -------------------------------- Strings ------------------------------------
-*/
+/* Strings */
 void			ft_bzero(void *s, size_t n);
 void			ft_strarrdel(char ***arr);
 void			ft_strdel(char **as);
@@ -74,9 +70,7 @@ char			**ft_strsplit(char const *s, char c);
 size_t			ft_strlen(const char *s);
 size_t			ft_strlcat(char *dst, const char *src, size_t size);
 
-/*
-** -------------------------------- Tests ------------------------------------
-*/
+/* Checks */
 int				ft_isalpha(int c);
 int				ft_isdigit(int c);
 int				ft_isalnum(int c);
@@ -84,9 +78,7 @@ int				ft_isascii(int c);
 int				ft_isprint(int c);
 int				ft_whitespaces(char s);
 
-/*
-** -------------------------------- Put ------------------------------------
-*/
+/* Put */
 void			ft_putchar(char c);
 void			ft_putstr(char const *s);
 void			ft_putnbr(int n);
@@ -96,9 +88,7 @@ void			ft_putstr_fd(char const *s, int fd);
 void			ft_putendl_fd(char const *s, int fd);
 void			ft_putnbr_fd(int n, int fd);
 
-/*
-** -------------------------------- List ------------------------------------
-*/
+/* List */
 void			ft_lstdelone(t_list **alst, void (*del)(void *, size_t));
 void			ft_lstadd(t_list **alst, t_list *new);
 void			ft_lstdel(t_list **alst, void (*del)(void *, size_t));
@@ -107,15 +97,14 @@ t_list			*ft_lstnew(void const *content, size_t content_size);
 t_list			*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 t_list			*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 
-/*
-** -------------------------------- Others ------------------------------------
-*/
+/* Others */
 int				ft_toupper(int c);
 int				ft_tolower(int c);
 int				get_next_line(const int fd, char **line);
 int				ft_atoi(const char *str);
 char			*ft_itoa(int n);
 void			ft_swap(int *a, int *b);
+int				ft_sqrt(int nb);
 void			ft_error(char *str);
 
 #endif

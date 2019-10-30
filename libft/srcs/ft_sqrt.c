@@ -1,18 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_putendl.c                                       :+:    :+:            */
+/*   ft_sqrt.c                                          :+:    :+:            */
 /*                                                     +:+                    */
-/*   By: ihering- <marvin@codam.nl>                   +#+                     */
+/*   By: ihering- <ihering-@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2019/01/20 16:43:11 by ihering-       #+#    #+#                */
-/*   Updated: 2019/10/29 16:42:54 by ihering-      ########   odam.nl         */
+/*   Created: 2019/10/30 11:05:20 by ihering-       #+#    #+#                */
+/*   Updated: 2019/10/30 11:05:36 by ihering-      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/libft.h"
-
-void	ft_putendl(char const *s)
+int	ft_sqrt(int nb)
 {
-	ft_putendl_fd(s, 1);
+	int sq;
+
+	sq = 1;
+	if (nb <= 0)
+		return (0);
+	while (sq * sq < nb)
+		sq++;
+	if (sq * sq == nb)
+		return (sq);
+	else
+		return (0);
 }
